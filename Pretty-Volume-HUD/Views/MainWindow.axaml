@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Pretty_Volume_HUD.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="Pretty_Volume_HUD.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Pretty_Volume_HUD"
+        
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True"
+        
+        Topmost="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="0"
+        CanResize="False"
+        
+        d:DesignHeight="50"
+        d:DesignWidth="300"
+        Height="50"
+        Width="300"
+        
+        Position="20, 10"
+>
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid RowDefinitions="*" ColumnDefinitions="Auto, *, Auto" Margin="10 0">
+        <TextBlock VerticalAlignment="Center">Volume</TextBlock>
+        
+        <Slider Value="{Binding Volume, Mode=TwoWay}" Minimum="0" Maximum="100" Grid.Column="1" Margin="10 0"/>
+        
+        <TextBlock Grid.Column="2" 
+                   Text="{Binding VolumeText}"
+                   VerticalAlignment="Center"/>
+    </Grid>
+
+</Window>
