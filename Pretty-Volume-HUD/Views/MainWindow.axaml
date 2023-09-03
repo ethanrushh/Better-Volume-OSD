@@ -9,6 +9,9 @@
         Icon="/Assets/sound-wave.ico"
         Title="Pretty_Volume_HUD"
         
+        ShowActivated="False"
+        ShowInTaskbar="False"
+        
         TransparencyLevelHint="AcrylicBlur"
         Background="Transparent"
         ExtendClientAreaToDecorationsHint="True"
@@ -23,8 +26,7 @@
         Height="50"
         Width="300"
         
-        Position="20, 10"
->
+        Position="20, 10">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
