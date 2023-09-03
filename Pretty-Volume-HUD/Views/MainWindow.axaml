@@ -6,7 +6,7 @@
         mc:Ignorable="d"
         x:Class="Pretty_Volume_HUD.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
+        Icon="/Assets/sound-wave.ico"
         Title="Pretty_Volume_HUD"
         
         TransparencyLevelHint="AcrylicBlur"

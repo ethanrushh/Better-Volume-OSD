@@ -6,7 +6,7 @@
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-        <ApplicationIcon>Assets\avalonia-logo.ico</ApplicationIcon>
+        <ApplicationIcon>Assets\sound-wave.ico</ApplicationIcon>
     </PropertyGroup>
 
     <ItemGroup>
